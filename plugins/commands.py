@@ -429,9 +429,9 @@ async def start(client, message):
             [
              [
               InlineKeyboardButton('😌', url='https://t.me/searchingshiv')
-           ]
-        )
-    )
+           ]]
+        ))
+
     # btn = [[
     #     InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     # ]]
