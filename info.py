@@ -21,12 +21,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/2057b2cadc6a6c48fe54a.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/2057b2cadc6a6c48fe54a.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/2057b2cadc6a6c48fe54a.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/7992276200ec1992b42df.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/7992276200ec1992b42df.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/7992276200ec1992b42df.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7db384d955159386d1060.jpg")
-VRFIED_IMG = environ.get("VRFIED_IMG", "https://graph.org/file/75aba964400ef7614eeea.jpg")
-VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/b8dfdccdb20b22ad6d8da.jpg")
+VRFIED_IMG = environ.get("VRFIED_IMG", "https://graph.org/file/7992276200ec1992b42df.jpg")
+VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/7992276200ec1992b42df.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
