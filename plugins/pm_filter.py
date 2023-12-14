@@ -1326,12 +1326,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [[
                 InlineKeyboardButton("🟢 Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ 🟢", callback_data=f"alalert#{from_user}")
               ]]
-        btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton(" Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ", url=GRP_LNK)
-               ]]
+
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
             reply_markup = InlineKeyboardMarkup(btn)
@@ -1382,15 +1377,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('↼ ᴅɪscusion Gʀᴏᴜᴘ', url="https://t.me/+wiPJ72U29pw3NDQ1"),
-                    InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⇀', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('↼ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ ⇀', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✪ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
-                  ]]
+                ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1468,7 +1455,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('✉️ ᴀɴʏ ǫᴜᴇʀʏ ✉️', url='https://t.me/+wiPJ72U29pw3NDQ1')
+            InlineKeyboardButton('✉️ ᴀɴʏ ǫᴜᴇʀʏ ✉️', url='https://t.me/+wiPJ72')
         ], [
             InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
             InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
