@@ -192,7 +192,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
     CAPTION = """
 <b><a href=https://t.me/searchingshiv>{file_name}</a>
-"" 
+"""
 
     FORCE_SUB = """----"""
 
